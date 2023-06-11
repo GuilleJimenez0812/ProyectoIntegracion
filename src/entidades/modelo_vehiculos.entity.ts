@@ -9,6 +9,6 @@ export class modelo_vehiculo {
   marca: string;
   @Column()
   anio_fabricacion: number;
-  @Column()
-  fecha_carga: Timestamp;
+  @Column({ type: 'timestamp' })
+  fecha_carga: Date;
 }

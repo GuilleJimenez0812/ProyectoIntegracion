@@ -4,13 +4,10 @@ import { EntidadesService } from './entidades/entidades.service';
 
 @Controller()
 export class AppController {
-  constructor(
-    private readonly appService: AppService,
-    private readonly entidadservice: EntidadesService,
-  ) {}
+  constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Get('obtener-datos-equipo_3')
   ObtenerData() {
-    return this.entidadservice.getAll();
+    return this.appService.getAll();
   }
 }

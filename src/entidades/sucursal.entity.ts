@@ -1,8 +1,8 @@
-import { Column, Entity, Timestamp } from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
 export class Sucursal {
-  @Column()
+  @PrimaryGeneratedColumn()
   id_sucursal: number;
 
   @Column()
@@ -17,6 +17,6 @@ export class Sucursal {
   @Column()
   latitud: number;
 
-  @Column()
-  fecha_carga: Timestamp;
+  @Column({ type: 'timestamp' })
+  fecha_carga: Date;
 }

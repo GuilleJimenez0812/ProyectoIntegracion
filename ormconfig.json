@@ -1,0 +1,14 @@
+{
+  "type": "postgres",
+  "host": "localhost",
+  "port": 5432,
+  "username": "postgres",
+  "password": "admin",
+  "database": "proyecto_electiva",
+  "entities": ["entity/*.js"],
+  "migrationsTableName": "",
+  "migrations": ["migration/*.js"],
+  "cli": {
+    "migrationsDir": "migration"
+  }
+}
