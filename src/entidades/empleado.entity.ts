@@ -1,22 +1,22 @@
-import { Column, Entity } from "typeorm";
+import { Column, Entity } from 'typeorm';
 
 @Entity()
 class Empleado {
-    @Column()
-    id_empleado: number
+  @Column()
+  id_empleado: number;
 
-    @Column()
-    nombre_empleado: string
+  @Column()
+  nombre_empleado: string;
 
-    @Column()
-    cargo: string
+  @Column()
+  cargo: string;
 
-    @Column()
-    fecha_contratacion: Date
+  @Column()
+  fecha_contratacion: Date;
 
-    @Column()
-    salario: number
-    
-    @Column()
-    horas_trabajadas: number
+  @Column()
+  salario: number;
+
+  @Column()
+  horas_trabajadas: number;
 }

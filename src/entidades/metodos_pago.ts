@@ -1,7 +1,7 @@
 import { Column, Entity, PrimaryGeneratedColumn, Timestamp } from 'typeorm';
 
 @Entity()
-class metodo_pago {
+export class metodo_pago {
   @PrimaryGeneratedColumn()
   id: number;
   @Column()

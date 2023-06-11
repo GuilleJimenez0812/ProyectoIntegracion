@@ -1,7 +1,7 @@
 import { Column, Entity, Timestamp } from 'typeorm';
 
 @Entity()
-class Sucursal {
+export class Sucursal {
   @Column()
   id_sucursal: number;
 

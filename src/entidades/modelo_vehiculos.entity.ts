@@ -1,6 +1,6 @@
 import { Column, Entity, PrimaryGeneratedColumn, Timestamp } from 'typeorm';
 @Entity()
-class modelo_vehiculo {
+export class modelo_vehiculo {
   @PrimaryGeneratedColumn()
   id: number;
   @Column()
