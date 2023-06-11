@@ -1,8 +1,9 @@
-import { Column, Entity } from "typeorm";
+/* eslint-disable prettier/prettier */
+import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 class IngresosEgresos{
-    @Column()
+    @PrimaryGeneratedColumn()
     id_transaccion: number
 
     @Column()

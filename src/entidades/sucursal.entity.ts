@@ -1,16 +1,22 @@
-import { Column, Entity } from "typeorm";
+import { Column, Entity, Timestamp } from 'typeorm';
 
 @Entity()
 class Sucursal {
-    @Column()
-    id_sucursal: number
+  @Column()
+  id_sucursal: number;
 
-    @Column()
-    nombre_sucursal: string
+  @Column()
+  nombre_sucursal: string;
 
-    @Column()
-    ciudad: string
+  @Column()
+  ubicacion: string;
 
-    @Column()
-    pais: string
+  @Column()
+  longitud: number;
+
+  @Column()
+  latitud: number;
+
+  @Column()
+  fecha_carga: Timestamp;
 }
