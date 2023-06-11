@@ -1,78 +1,58 @@
-import { Column, Entity } from 'typeorm';
+import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity()
-class HechosAlquiler {
-  @Column()
-  id_alquiler: number;
-
-  @Column()
-  fecha_alquiler: Date;
-
-  @Column()
-  ID_Transaccion: number;
-
-  @Column()
-  fecha_devolucion: Date;
-
-  @Column()
-  id_vhiculo: number;
-
-  @Column()
-  id_cliente: number;
-
-  @Column()
-  id_empleado: number;
-
-  @Column()
-  id_sucursal: number;
-
-  @Column()
-  dias_alquiler: string;
-
-  @Column()
-  monto_pagado: number;
+export class HechosAlquiler {
+  @PrimaryGeneratedColumn()
+  id: number;
 
   @Column()
   fecha: Date;
 
   @Column()
-  top_10_pos_1: string;
+  porc_satisfaccion_cliente: number;
 
   @Column()
-  top_10_pos_2: string;
+  id_metodo_pago: number;
 
   @Column()
-  top_10_pos_3: string;
+  posicion_top_metodo_pago_utilizado: number;
 
   @Column()
-  top_10_pos_4: string;
+  metodo_pago_veces_utilizado: number;
 
   @Column()
-  top_10_pos_5: string;
+  porcentaje_utilizacion_metodo_pago: number;
 
   @Column()
-  top_10_pos_6: string;
+  posicion_top_modelo_vehiculo_alquilado: number;
 
   @Column()
-  top_10_pos_7: string;
+  id_modelo_vehiculo: number;
 
   @Column()
-  top_10_pos_8: string;
+  modelo_veces_alquilado: number;
 
   @Column()
-  top_10_pos_9: string;
+  modelo_porcentaje_alquilado: number;
 
   @Column()
-  top_10_pos_10: string;
+  ingresos: number;
 
   @Column()
-  porcentaje_ingreso: number;
+  egresos: number;
 
   @Column()
-  porcentaje_egreso: number;
+  porc_ingresos: number;
 
   @Column()
-  porcentaje_satisfaccion: number;
+  porc_egresos: number;
+
   @Column()
-  top_metodo_pago: number;
+  ganancia_neta: number;
+
+  @Column()
+  duracion_promedio_alquiler: number;
+
+  @Column()
+  total_alquileres: number;
 }

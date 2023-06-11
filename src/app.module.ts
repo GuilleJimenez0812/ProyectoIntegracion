@@ -9,10 +9,16 @@ import { EntidadesController } from './entidades/entidades.controller';
 import { metodo_pago } from './entidades/metodos_pago.entity';
 import { modelo_vehiculo } from './entidades/modelo_vehiculos.entity';
 import { Sucursal } from './entidades/sucursal.entity';
+import { HechosAlquiler } from './entidades/hechos-alquiler.entity';
 
 @Module({
   imports: [
-    TypeOrmModule.forFeature([metodo_pago, modelo_vehiculo, Sucursal]),
+    TypeOrmModule.forFeature([
+      metodo_pago,
+      modelo_vehiculo,
+      Sucursal,
+      HechosAlquiler,
+    ]),
 
     TypeOrmModule.forRoot({
       type: 'postgres',
