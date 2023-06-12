@@ -36,7 +36,7 @@ export class AppService {
             id_anio: value.fecha.getFullYear(),
             id_mes: value.fecha.getMonth(),
             id_dia: value.fecha.getDay(),
-            id_hora: 3,
+            id_hora: value.fecha.getHours(),
           },
           porc_Satisfaccion_Cliente: value.porc_satisfaccion_cliente,
           id_metodo_pago: value.id_metodo_pago,
