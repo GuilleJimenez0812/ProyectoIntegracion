@@ -3,7 +3,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity()
 export class metodo_pago {
   @PrimaryGeneratedColumn()
-  id: number;
+  id_metodo: number;
   @Column()
   nombre: string;
   @Column({ type: 'timestamp' })
