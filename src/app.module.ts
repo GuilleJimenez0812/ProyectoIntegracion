@@ -19,17 +19,18 @@ import { HechosAlquiler } from './entidades/hechos-alquiler.entity';
       Sucursal,
       HechosAlquiler,
     ]),
-
+    //postgres://proyecto_electiva_user:IONnFYW7BUsjg36cmq7YqZsAdR4LPxVO@dpg-ci34c9bhp8u1a1dvnk30-a.oregon-postgres.render.com/proyecto_electiva
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'dpg-ci34c9bhp8u1a1dvnk30-a.oregon-postgres.render.com',
       port: 5432,
-      username: 'postgres',
-      password: 'admin',
+      username: 'proyecto_electiva_user',
+      password: 'IONnFYW7BUsjg36cmq7YqZsAdR4LPxVO',
       database: 'proyecto_electiva',
       entities: [__dirname + '/**/*.entity{.ts,.js}'],
       migrations: ['dist/migrations/*{.ts,.js}'],
       synchronize: true,
+      ssl: true,
     }),
     IndicadoresModule,
     EntidadesModule,
