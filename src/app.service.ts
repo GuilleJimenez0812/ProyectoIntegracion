@@ -55,8 +55,10 @@ export class AppService {
           porc_ingresos: value.ingresos,
           porc_egresos: value.porc_egresos,
           ganancia_neta: value.ganancia_neta,
+          porc_vehiculos_disponibles: 45,
           duracion_promedio_alquiler: value.duracion_promedio_alquiler,
           total_alquileres: value.total_alquileres,
+          porc_vehiculos_utilizados: 60,
         };
       }),
     };
