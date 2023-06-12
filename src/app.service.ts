@@ -29,7 +29,7 @@ export class AppService {
     return {
       sucursal: sucursal,
       metodo_Pagos: metodo_pago,
-      modelo_vehiculos: modelo_vehiculo,
+      modelo_Vehiculos: modelo_vehiculo,
       estadisticas_sucursal: hechos.map((value) => {
         return {
           tiempo: {
