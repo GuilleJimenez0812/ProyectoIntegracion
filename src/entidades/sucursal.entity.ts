@@ -6,7 +6,7 @@ export class Sucursal {
   id_sucursal: number;
 
   @Column()
-  nombre_sucursal: string;
+  nombre: string;
 
   @Column()
   ubicacion: string;
