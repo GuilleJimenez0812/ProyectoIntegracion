@@ -2,7 +2,7 @@ import { Column, Entity, PrimaryGeneratedColumn, Timestamp } from 'typeorm';
 @Entity()
 export class modelo_vehiculo {
   @PrimaryGeneratedColumn()
-  id: number;
+  id_modelo: number;
   @Column()
   nombre_modelo: string;
   @Column()
