@@ -27,7 +27,7 @@ export class AppService {
     const hechos = await this.hechosRepository.find();
 
     return {
-      sucursal: sucursal,
+      sucursal: sucursal[0],
       metodo_Pagos: metodo_pago,
       modelo_Vehiculos: modelo_vehiculo,
       estadisticas_sucursal: hechos.map((value) => {
